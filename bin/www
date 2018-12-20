@@ -13,8 +13,8 @@ let http = require('http');
  */
 
 //!Don't need this anymore becuase nodemon looks into app.js not ./bin/www
-// let port = normalizePort(process.env.PORT || '5001');
-// app.set('port', port);
+let port = normalizePort(process.env.PORT || '5001');
+app.set('port', port);
 
 /**
  * Create HTTP server.
