@@ -17,7 +17,7 @@ function validateEntries(portfolio) {
   const reason = isNaN(portfolio.reason);
   const comment = isNaN(portfolio.comment);
   const email = isNaN(portfolio.email);
-  return firstName && lastName && reason && comment;
+  return firstName && lastName && reason && comment & email;
 }
 
 router.get('/', (req, res) => {

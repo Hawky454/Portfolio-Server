@@ -3,10 +3,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('firstName');
     table.string('lastName');
-    table
-      .string('email')
-      .unique()
-      .notNullable();
+    table.string('email');
     table.string('reason');
     table.string('comment');
   });
